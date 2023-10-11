@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MetaMapWebSDKDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="HkV-u7-QTu">
+                                <rect key="frame" x="136.66666666666666" y="129" width="119.99999999999997" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gek-7v-b25"/>
+                                    <constraint firstAttribute="width" constant="120" id="ilE-PM-Sm6"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MetaMap SDK Url" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eMz-hM-8p3">
+                                <rect key="frame" x="20" y="239" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oKW-YK-3Fo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2a-RB-hRP">
+                                <rect key="frame" x="20" y="369" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0H2-gI-Wc2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j2a-RB-hRP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="H8A-Ox-OTE"/>
+                            <constraint firstItem="j2a-RB-hRP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QQq-9o-Hue"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eMz-hM-8p3" secondAttribute="trailing" constant="20" id="b01-65-j2O"/>
+                            <constraint firstItem="HkV-u7-QTu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fJQ-Z5-kc9"/>
+                            <constraint firstItem="eMz-hM-8p3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hqM-Rm-REs"/>
+                            <constraint firstItem="eMz-hM-8p3" firstAttribute="top" secondItem="HkV-u7-QTu" secondAttribute="bottom" constant="70" id="noo-AF-IkU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j2a-RB-hRP" secondAttribute="trailing" constant="20" id="u2m-gD-Tai"/>
+                            <constraint firstItem="HkV-u7-QTu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="y6X-ag-DOj"/>
+                            <constraint firstItem="j2a-RB-hRP" firstAttribute="top" secondItem="eMz-hM-8p3" secondAttribute="bottom" constant="80" id="ytf-tf-Uev"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="j2a-RB-hRP" id="Fup-gF-nBh"/>
+                        <outlet property="textField" destination="eMz-hM-8p3" id="nIm-ZN-Y98"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="115" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
